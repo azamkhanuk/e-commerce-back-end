@@ -3,13 +3,15 @@ const connectDB = require('./config/db');
 
 const app = express();
 
+//! Connect Database
 connectDB();
 
-app.get('/', (req, res) =>
-  res.json({ msg: 'Welcome to the ContactKeeper API...' })
-);
+//! Init Middleware
+app.use(express.json({ extended: false }));
 
-// Define Routes
+app.get('/', (req, res) => res.json({ msg: 'Welcome to the Trainer API...' }));
+
+//! Define Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/shoes', require('./routes/shoes'));
