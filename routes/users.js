@@ -2,11 +2,10 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-
-const { check, validationResult } = require('express-validator');
+const config = require('config');
+const { check, validationResult } = require('express-validator/check');
 
 const User = require('../models/User');
-const config = require('config');
 
 // @route     POST api/users
 // @desc      Regiter a user
@@ -14,7 +13,7 @@ const config = require('config');
 router.post(
   '/',
   [
-    check('name', 'Please add a valid name')
+    check('name', 'Please add name')
       .not()
       .isEmpty(),
     check('email', 'Please include a valid email').isEmail(),
@@ -28,13 +27,14 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
+
     const { name, email, password } = req.body;
 
     try {
       let user = await User.findOne({ email });
 
       if (user) {
-        return res.status(400).json({ msg: 'User already exists.' });
+        return res.status(400).json({ msg: 'User already exists' });
       }
 
       user = new User({
@@ -48,14 +48,13 @@ router.post(
       user.password = await bcrypt.hash(password, salt);
 
       await user.save();
+
       const payload = {
         user: {
           id: user.id
         }
       };
 
-      //! 3600 = 1 hour - production --- Set to longer for testing
-      //* In users and auth
       jwt.sign(
         payload,
         config.get('jwtSecret'),
