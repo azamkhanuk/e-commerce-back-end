@@ -14,7 +14,8 @@ app.get('/', (req, res) => res.json({ msg: 'Welcome to the Trainer API...' }));
 //! Define Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/shoes', require('./routes/shoes'));
+app.use('/api/trainers', require('./routes/trainers'));
+app.use('/api/fav', require('./routes/fav'));
 
 const PORT = process.env.PORT || 5000;
 
