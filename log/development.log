@@ -1,0 +1,1166 @@
+Started GET "/items" for ::1 at 2019-07-03 10:09:21 +0100
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items" for ::1 at 2019-07-03 10:10:35 +0100
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (3.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 61ms (Views: 20.8ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:11:14 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:11:46 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:12:20 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (6.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:12:45 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (3.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mItem Create (18.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HARLEM RICHELIEU"], ["description", "A two-tone rubber outsole and padded ankle and tongue add a practical note to the Harlem Richelieu shoes. The design takes inspiration from hiking boots with its thick laces, which complement its mixed material composition. This includes technical textile, suede calf leather and grained Epi leather, which have been combined to form an attractive exterior."], ["cost", 745], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.157048"], ["updated_at", "2019-07-03 09:13:19.157048"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mColor Create (2.7ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "black"], ["created_at", "2019-07-03 09:13:19.224589"], ["updated_at", "2019-07-03 09:13:19.224589"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-harlem-richelieu-shoes--BH9I1PMI11_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mColor Create (0.6ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "red"], ["created_at", "2019-07-03 09:13:19.232110"], ["updated_at", "2019-07-03 09:13:19.232110"], ["image", ""]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "Updated in Monogram Denim Tie and Dye, the Fastlane Trainers feature one of the major themes of the season. The shoes are distinguished by a lightweight rubber outsole and a unique V-pattern tread for extra traction. The design is finished with the iconic Louis Vuitton signature on the outsole."], ["cost", 720], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.235405"], ["updated_at", "2019-07-03 09:13:19.235405"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mColor Create (0.6ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "black"], ["created_at", "2019-07-03 09:13:19.239862"], ["updated_at", "2019-07-03 09:13:19.239862"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BHLU1PDN02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mColor Create (0.5ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "red"], ["created_at", "2019-07-03 09:13:19.243943"], ["updated_at", "2019-07-03 09:13:19.243943"], ["image", ""]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "blue"], ["created_at", "2019-07-03 09:13:19.248145"], ["updated_at", "2019-07-03 09:13:19.248145"], ["image", ""]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RIVOLI TRAINER BOOT"], ["description", "The Rivoli trainer boot is a distinctive hi-top style crafted from three different versions of iconic Monogram canvas. The Louis Vuitton signature is embossed in gold on the tongue and also features on the functional velcro strap, which can be worn on either the front or the back of the shoe."], ["cost", 645], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.250760"], ["updated_at", "2019-07-03 09:13:19.250760"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "white"], ["created_at", "2019-07-03 09:13:19.254398"], ["updated_at", "2019-07-03 09:13:19.254398"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-rivoli-trainer-boot-shoes--BFRU1PMOEB_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "pink"], ["created_at", "2019-07-03 09:13:19.257670"], ["updated_at", "2019-07-03 09:13:19.257670"], ["image", ""]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.259833"], ["updated_at", "2019-07-03 09:13:19.259833"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "gold"], ["created_at", "2019-07-03 09:13:19.263165"], ["updated_at", "2019-07-03 09:13:19.263165"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-pulse-trainer-shoes--BG9U2PMI02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "white"], ["created_at", "2019-07-03 09:13:19.266191"], ["updated_at", "2019-07-03 09:13:19.266191"], ["image", ""]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "black"], ["created_at", "2019-07-03 09:13:19.269387"], ["updated_at", "2019-07-03 09:13:19.269387"], ["image", ""]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "brown"], ["created_at", "2019-07-03 09:13:19.272315"], ["updated_at", "2019-07-03 09:13:19.272315"], ["image", ""]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "ZIG ZAG TRAINER"], ["description", "The Zig Zag trainer is a daring design showcasing myriad vivid hues. Crafted from some of Louis Vuittons most emblematic fabrics, including Monogram and Damier Graphite canvas, it is based on brown and white tones. A chunky shoe with a contemporary, street-style finish, it is named for the unmistakable cutouts on its exterior."], ["cost", 830], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.274582"], ["updated_at", "2019-07-03 09:13:19.274582"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "pink"], ["created_at", "2019-07-03 09:13:19.278019"], ["updated_at", "2019-07-03 09:13:19.278019"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-zig-zag-trainer-shoes--BG9U3PMIGR_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "white"], ["created_at", "2019-07-03 09:13:19.280966"], ["updated_at", "2019-07-03 09:13:19.280966"], ["image", ""]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "red"], ["created_at", "2019-07-03 09:13:19.283767"], ["updated_at", "2019-07-03 09:13:19.283767"], ["image", ""]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.285846"], ["updated_at", "2019-07-03 09:13:19.285846"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:44
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "brown"], ["created_at", "2019-07-03 09:13:19.288856"], ["updated_at", "2019-07-03 09:13:19.288856"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-trainer-shoes--BG9U1PAL02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "gold"], ["created_at", "2019-07-03 09:13:19.292016"], ["updated_at", "2019-07-03 09:13:19.292016"], ["image", ""]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "black"], ["created_at", "2019-07-03 09:13:19.295350"], ["updated_at", "2019-07-03 09:13:19.295350"], ["image", ""]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "white"], ["created_at", "2019-07-03 09:13:19.298477"], ["updated_at", "2019-07-03 09:13:19.298477"], ["image", ""]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "TROCADERO SLIP-ON TRAINER"], ["description", "Made with striking grained leather in clean lines the Trocadero slip-on trainer is crafted in three eye-catching shades. The Epi calf leather, in navy, blue and tan, is punctuated with luxurious details, such as the Houses iconic Monogram canvas on the heel. A white rubber outsole completes the shoe."], ["cost", 515], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.300653"], ["updated_at", "2019-07-03 09:13:19.300653"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "yellow"], ["created_at", "2019-07-03 09:13:19.303952"], ["updated_at", "2019-07-03 09:13:19.303952"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-trocadero-slip-on-trainer-shoes--BFTU2PEC22_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "blue"], ["created_at", "2019-07-03 09:13:19.306907"], ["updated_at", "2019-07-03 09:13:19.306907"], ["image", ""]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "red"], ["created_at", "2019-07-03 09:13:19.309994"], ["updated_at", "2019-07-03 09:13:19.309994"], ["image", ""]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY TRAINER"], ["description", "Black alligator leather and a gold-colour LV Initials pin elevate the emblematic Run Away trainer. With a hiking boot-influenced design, the shoe is completed with metal eyelets and technical laces. A hand-finished Louis Vuitton plaque adorns the fresh white rubber outsole."], ["cost", 5150], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.312128"], ["updated_at", "2019-07-03 09:13:19.312128"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 8], ["color", "white"], ["created_at", "2019-07-03 09:13:19.315073"], ["updated_at", "2019-07-03 09:13:19.315073"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-lv-runner-gaiter-shoes--BG9K8RMI01_PM1_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "V.N.R TRAINER"], ["description", "The innovative V.N.R trainer is a boundary-pushing shoe. The sock-like, one-piece upper is woven with a lurex thread for a delicate sheen that is magnified by the gradient metallic rubber outsole. An LV patch adorns the tongue."], ["cost", 995], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.317121"], ["updated_at", "2019-07-03 09:13:19.317121"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "gold"], ["created_at", "2019-07-03 09:13:19.320034"], ["updated_at", "2019-07-03 09:13:19.320034"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-v-n-r-trainer-shoes--BFVU1PWF06_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "brown"], ["created_at", "2019-07-03 09:13:19.322967"], ["updated_at", "2019-07-03 09:13:19.322967"], ["image", ""]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "The Fastlane Trainers bear a striking V signature on the back along with a Louis Vuitton ribbon on the upper section. Their lightweight outsole is made from flexible rubber, ensuring superior comfort. This reimagining of a beloved design features a blue Damier-knit fabric complemented by vibrant orange details"], ["cost", 625], ["gender", "male"], ["created_at", "2019-07-03 09:13:19.338186"], ["updated_at", "2019-07-03 09:13:19.338186"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mColor Create (0.5ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "blue"], ["created_at", "2019-07-03 09:13:19.342391"], ["updated_at", "2019-07-03 09:13:19.342391"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BGLU1PWF_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "red"], ["created_at", "2019-07-03 09:13:19.346504"], ["updated_at", "2019-07-03 09:13:19.346504"], ["image", ""]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mSize Create (2.3ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 5], ["created_at", "2019-07-03 09:13:19.362834"], ["updated_at", "2019-07-03 09:13:19.362834"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mSize Create (0.6ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 6], ["created_at", "2019-07-03 09:13:19.369797"], ["updated_at", "2019-07-03 09:13:19.369797"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+Started GET "/items" for ::1 at 2019-07-03 10:13:29 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 79ms (Views: 51.7ms | ActiveRecord: 9.4ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (5052.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ecommerce_development"[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (5047.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ecommerce_development"[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mItem Create (2.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HARLEM RICHELIEU"], ["description", "A two-tone rubber outsole and padded ankle and tongue add a practical note to the Harlem Richelieu shoes. The design takes inspiration from hiking boots with its thick laces, which complement its mixed material composition. This includes technical textile, suede calf leather and grained Epi leather, which have been combined to form an attractive exterior."], ["cost", 745], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.066949"], ["updated_at", "2019-07-03 09:15:57.066949"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mColor Create (0.8ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "black"], ["created_at", "2019-07-03 09:15:57.100734"], ["updated_at", "2019-07-03 09:15:57.100734"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-harlem-richelieu-shoes--BH9I1PMI11_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "red"], ["created_at", "2019-07-03 09:15:57.104921"], ["updated_at", "2019-07-03 09:15:57.104921"], ["image", ""]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "Updated in Monogram Denim Tie and Dye, the Fastlane Trainers feature one of the major themes of the season. The shoes are distinguished by a lightweight rubber outsole and a unique V-pattern tread for extra traction. The design is finished with the iconic Louis Vuitton signature on the outsole."], ["cost", 720], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.107174"], ["updated_at", "2019-07-03 09:15:57.107174"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "black"], ["created_at", "2019-07-03 09:15:57.110870"], ["updated_at", "2019-07-03 09:15:57.110870"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BHLU1PDN02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "red"], ["created_at", "2019-07-03 09:15:57.114002"], ["updated_at", "2019-07-03 09:15:57.114002"], ["image", ""]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "blue"], ["created_at", "2019-07-03 09:15:57.117320"], ["updated_at", "2019-07-03 09:15:57.117320"], ["image", ""]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RIVOLI TRAINER BOOT"], ["description", "The Rivoli trainer boot is a distinctive hi-top style crafted from three different versions of iconic Monogram canvas. The Louis Vuitton signature is embossed in gold on the tongue and also features on the functional velcro strap, which can be worn on either the front or the back of the shoe."], ["cost", 645], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.119610"], ["updated_at", "2019-07-03 09:15:57.119610"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "white"], ["created_at", "2019-07-03 09:15:57.123072"], ["updated_at", "2019-07-03 09:15:57.123072"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-rivoli-trainer-boot-shoes--BFRU1PMOEB_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "pink"], ["created_at", "2019-07-03 09:15:57.125913"], ["updated_at", "2019-07-03 09:15:57.125913"], ["image", ""]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.128518"], ["updated_at", "2019-07-03 09:15:57.128518"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mColor Create (0.5ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "gold"], ["created_at", "2019-07-03 09:15:57.132890"], ["updated_at", "2019-07-03 09:15:57.132890"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-pulse-trainer-shoes--BG9U2PMI02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "white"], ["created_at", "2019-07-03 09:15:57.136908"], ["updated_at", "2019-07-03 09:15:57.136908"], ["image", ""]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mColor Create (0.5ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "black"], ["created_at", "2019-07-03 09:15:57.140491"], ["updated_at", "2019-07-03 09:15:57.140491"], ["image", ""]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "brown"], ["created_at", "2019-07-03 09:15:57.144264"], ["updated_at", "2019-07-03 09:15:57.144264"], ["image", ""]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "ZIG ZAG TRAINER"], ["description", "The Zig Zag trainer is a daring design showcasing myriad vivid hues. Crafted from some of Louis Vuittons most emblematic fabrics, including Monogram and Damier Graphite canvas, it is based on brown and white tones. A chunky shoe with a contemporary, street-style finish, it is named for the unmistakable cutouts on its exterior."], ["cost", 830], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.146352"], ["updated_at", "2019-07-03 09:15:57.146352"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mColor Create (0.7ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "pink"], ["created_at", "2019-07-03 09:15:57.149729"], ["updated_at", "2019-07-03 09:15:57.149729"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-zig-zag-trainer-shoes--BG9U3PMIGR_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "white"], ["created_at", "2019-07-03 09:15:57.153194"], ["updated_at", "2019-07-03 09:15:57.153194"], ["image", ""]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "red"], ["created_at", "2019-07-03 09:15:57.156234"], ["updated_at", "2019-07-03 09:15:57.156234"], ["image", ""]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.158499"], ["updated_at", "2019-07-03 09:15:57.158499"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:44
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "brown"], ["created_at", "2019-07-03 09:15:57.161973"], ["updated_at", "2019-07-03 09:15:57.161973"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-trainer-shoes--BG9U1PAL02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "gold"], ["created_at", "2019-07-03 09:15:57.164832"], ["updated_at", "2019-07-03 09:15:57.164832"], ["image", ""]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "black"], ["created_at", "2019-07-03 09:15:57.167650"], ["updated_at", "2019-07-03 09:15:57.167650"], ["image", ""]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "white"], ["created_at", "2019-07-03 09:15:57.170447"], ["updated_at", "2019-07-03 09:15:57.170447"], ["image", ""]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "TROCADERO SLIP-ON TRAINER"], ["description", "Made with striking grained leather in clean lines the Trocadero slip-on trainer is crafted in three eye-catching shades. The Epi calf leather, in navy, blue and tan, is punctuated with luxurious details, such as the Houses iconic Monogram canvas on the heel. A white rubber outsole completes the shoe."], ["cost", 515], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.172570"], ["updated_at", "2019-07-03 09:15:57.172570"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "yellow"], ["created_at", "2019-07-03 09:15:57.176045"], ["updated_at", "2019-07-03 09:15:57.176045"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-trocadero-slip-on-trainer-shoes--BFTU2PEC22_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "blue"], ["created_at", "2019-07-03 09:15:57.179387"], ["updated_at", "2019-07-03 09:15:57.179387"], ["image", ""]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "red"], ["created_at", "2019-07-03 09:15:57.183182"], ["updated_at", "2019-07-03 09:15:57.183182"], ["image", ""]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY TRAINER"], ["description", "Black alligator leather and a gold-colour LV Initials pin elevate the emblematic Run Away trainer. With a hiking boot-influenced design, the shoe is completed with metal eyelets and technical laces. A hand-finished Louis Vuitton plaque adorns the fresh white rubber outsole."], ["cost", 5150], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.186277"], ["updated_at", "2019-07-03 09:15:57.186277"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 8], ["color", "white"], ["created_at", "2019-07-03 09:15:57.190671"], ["updated_at", "2019-07-03 09:15:57.190671"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-lv-runner-gaiter-shoes--BG9K8RMI01_PM1_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "V.N.R TRAINER"], ["description", "The innovative V.N.R trainer is a boundary-pushing shoe. The sock-like, one-piece upper is woven with a lurex thread for a delicate sheen that is magnified by the gradient metallic rubber outsole. An LV patch adorns the tongue."], ["cost", 995], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.193344"], ["updated_at", "2019-07-03 09:15:57.193344"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "gold"], ["created_at", "2019-07-03 09:15:57.196692"], ["updated_at", "2019-07-03 09:15:57.196692"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-v-n-r-trainer-shoes--BFVU1PWF06_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "brown"], ["created_at", "2019-07-03 09:15:57.199802"], ["updated_at", "2019-07-03 09:15:57.199802"], ["image", ""]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "The Fastlane Trainers bear a striking V signature on the back along with a Louis Vuitton ribbon on the upper section. Their lightweight outsole is made from flexible rubber, ensuring superior comfort. This reimagining of a beloved design features a blue Damier-knit fabric complemented by vibrant orange details"], ["cost", 625], ["gender", "male"], ["created_at", "2019-07-03 09:15:57.201927"], ["updated_at", "2019-07-03 09:15:57.201927"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "blue"], ["created_at", "2019-07-03 09:15:57.205225"], ["updated_at", "2019-07-03 09:15:57.205225"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BGLU1PWF_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "red"], ["created_at", "2019-07-03 09:15:57.208191"], ["updated_at", "2019-07-03 09:15:57.208191"], ["image", ""]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mSize Create (0.6ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 5], ["created_at", "2019-07-03 09:15:57.222366"], ["updated_at", "2019-07-03 09:15:57.222366"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mSize Create (0.3ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 6], ["created_at", "2019-07-03 09:15:57.226142"], ["updated_at", "2019-07-03 09:15:57.226142"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+Started GET "/items" for ::1 at 2019-07-03 10:19:31 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 27ms (Views: 15.3ms | ActiveRecord: 8.1ms)
+
+
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5291487476256315705)[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5291487476256315705)[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HARLEM RICHELIEU"], ["description", "A two-tone rubber outsole and padded ankle and tongue add a practical note to the Harlem Richelieu shoes. The design takes inspiration from hiking boots with its thick laces, which complement its mixed material composition. This includes technical textile, suede calf leather and grained Epi leather, which have been combined to form an attractive exterior."], ["cost", 745], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.294647"], ["updated_at", "2019-07-03 09:20:10.294647"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mColor Create (0.6ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "black"], ["created_at", "2019-07-03 09:20:10.320770"], ["updated_at", "2019-07-03 09:20:10.320770"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-harlem-richelieu-shoes--BH9I1PMI11_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 1], ["color", "red"], ["created_at", "2019-07-03 09:20:10.324431"], ["updated_at", "2019-07-03 09:20:10.324431"], ["image", ""]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "Updated in Monogram Denim Tie and Dye, the Fastlane Trainers feature one of the major themes of the season. The shoes are distinguished by a lightweight rubber outsole and a unique V-pattern tread for extra traction. The design is finished with the iconic Louis Vuitton signature on the outsole."], ["cost", 720], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.326855"], ["updated_at", "2019-07-03 09:20:10.326855"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "black"], ["created_at", "2019-07-03 09:20:10.330152"], ["updated_at", "2019-07-03 09:20:10.330152"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BHLU1PDN02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "red"], ["created_at", "2019-07-03 09:20:10.333252"], ["updated_at", "2019-07-03 09:20:10.333252"], ["image", ""]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 2], ["color", "blue"], ["created_at", "2019-07-03 09:20:10.336412"], ["updated_at", "2019-07-03 09:20:10.336412"], ["image", ""]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RIVOLI TRAINER BOOT"], ["description", "The Rivoli trainer boot is a distinctive hi-top style crafted from three different versions of iconic Monogram canvas. The Louis Vuitton signature is embossed in gold on the tongue and also features on the functional velcro strap, which can be worn on either the front or the back of the shoe."], ["cost", 645], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.338584"], ["updated_at", "2019-07-03 09:20:10.338584"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "white"], ["created_at", "2019-07-03 09:20:10.341793"], ["updated_at", "2019-07-03 09:20:10.341793"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-rivoli-trainer-boot-shoes--BFRU1PMOEB_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 3], ["color", "pink"], ["created_at", "2019-07-03 09:20:10.344587"], ["updated_at", "2019-07-03 09:20:10.344587"], ["image", ""]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.346861"], ["updated_at", "2019-07-03 09:20:10.346861"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "gold"], ["created_at", "2019-07-03 09:20:10.349877"], ["updated_at", "2019-07-03 09:20:10.349877"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-pulse-trainer-shoes--BG9U2PMI02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "white"], ["created_at", "2019-07-03 09:20:10.353062"], ["updated_at", "2019-07-03 09:20:10.353062"], ["image", ""]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "black"], ["created_at", "2019-07-03 09:20:10.356014"], ["updated_at", "2019-07-03 09:20:10.356014"], ["image", ""]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 4], ["color", "brown"], ["created_at", "2019-07-03 09:20:10.358786"], ["updated_at", "2019-07-03 09:20:10.358786"], ["image", ""]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "ZIG ZAG TRAINER"], ["description", "The Zig Zag trainer is a daring design showcasing myriad vivid hues. Crafted from some of Louis Vuittons most emblematic fabrics, including Monogram and Damier Graphite canvas, it is based on brown and white tones. A chunky shoe with a contemporary, street-style finish, it is named for the unmistakable cutouts on its exterior."], ["cost", 830], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.360837"], ["updated_at", "2019-07-03 09:20:10.360837"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "pink"], ["created_at", "2019-07-03 09:20:10.363745"], ["updated_at", "2019-07-03 09:20:10.363745"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-zig-zag-trainer-shoes--BG9U3PMIGR_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "white"], ["created_at", "2019-07-03 09:20:10.366577"], ["updated_at", "2019-07-03 09:20:10.366577"], ["image", ""]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 5], ["color", "red"], ["created_at", "2019-07-03 09:20:10.369316"], ["updated_at", "2019-07-03 09:20:10.369316"], ["image", ""]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY PULSE TRAINER"], ["description", "This emblematic Run Away Pulse trainer is fashioned from signature Monogram canvas and other iconic House materials. LV Initials embellish the heel patch for a subtle signature touch. Other details include hiking boot-style eyelets, two-tone laces and an augmented black rubber outsole with flakes."], ["cost", 875], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.371699"], ["updated_at", "2019-07-03 09:20:10.371699"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:44
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "brown"], ["created_at", "2019-07-03 09:20:10.375238"], ["updated_at", "2019-07-03 09:20:10.375238"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-run-away-trainer-shoes--BG9U1PAL02_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "gold"], ["created_at", "2019-07-03 09:20:10.379869"], ["updated_at", "2019-07-03 09:20:10.379869"], ["image", ""]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "black"], ["created_at", "2019-07-03 09:20:10.383930"], ["updated_at", "2019-07-03 09:20:10.383930"], ["image", ""]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 6], ["color", "white"], ["created_at", "2019-07-03 09:20:10.387676"], ["updated_at", "2019-07-03 09:20:10.387676"], ["image", ""]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "TROCADERO SLIP-ON TRAINER"], ["description", "Made with striking grained leather in clean lines the Trocadero slip-on trainer is crafted in three eye-catching shades. The Epi calf leather, in navy, blue and tan, is punctuated with luxurious details, such as the Houses iconic Monogram canvas on the heel. A white rubber outsole completes the shoe."], ["cost", 515], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.390681"], ["updated_at", "2019-07-03 09:20:10.390681"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mColor Create (0.7ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "yellow"], ["created_at", "2019-07-03 09:20:10.395193"], ["updated_at", "2019-07-03 09:20:10.395193"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-trocadero-slip-on-trainer-shoes--BFTU2PEC22_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:53
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "blue"], ["created_at", "2019-07-03 09:20:10.399431"], ["updated_at", "2019-07-03 09:20:10.399431"], ["image", ""]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 7], ["color", "red"], ["created_at", "2019-07-03 09:20:10.402728"], ["updated_at", "2019-07-03 09:20:10.402728"], ["image", ""]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "RUN AWAY TRAINER"], ["description", "Black alligator leather and a gold-colour LV Initials pin elevate the emblematic Run Away trainer. With a hiking boot-influenced design, the shoe is completed with metal eyelets and technical laces. A hand-finished Louis Vuitton plaque adorns the fresh white rubber outsole."], ["cost", 5150], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.404998"], ["updated_at", "2019-07-03 09:20:10.404998"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:59
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 8], ["color", "white"], ["created_at", "2019-07-03 09:20:10.408296"], ["updated_at", "2019-07-03 09:20:10.408296"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-lv-runner-gaiter-shoes--BG9K8RMI01_PM1_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "V.N.R TRAINER"], ["description", "The innovative V.N.R trainer is a boundary-pushing shoe. The sock-like, one-piece upper is woven with a lurex thread for a delicate sheen that is magnified by the gradient metallic rubber outsole. An LV patch adorns the tongue."], ["cost", 995], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.410500"], ["updated_at", "2019-07-03 09:20:10.410500"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "gold"], ["created_at", "2019-07-03 09:20:10.413618"], ["updated_at", "2019-07-03 09:20:10.413618"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-v-n-r-trainer-shoes--BFVU1PWF06_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mColor Create (0.4ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 9], ["color", "brown"], ["created_at", "2019-07-03 09:20:10.416658"], ["updated_at", "2019-07-03 09:20:10.416658"], ["image", ""]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "cost", "gender", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "FASTLANE TRAINERS"], ["description", "The Fastlane Trainers bear a striking V signature on the back along with a Louis Vuitton ribbon on the upper section. Their lightweight outsole is made from flexible rubber, ensuring superior comfort. This reimagining of a beloved design features a blue Damier-knit fabric complemented by vibrant orange details"], ["cost", 625], ["gender", "male"], ["created_at", "2019-07-03 09:20:10.418864"], ["updated_at", "2019-07-03 09:20:10.418864"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "blue"], ["created_at", "2019-07-03 09:20:10.421691"], ["updated_at", "2019-07-03 09:20:10.421691"], ["image", "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_M/louis-vuitton-fastlane-trainers-shoes--BGLU1PWF_PM2_Front%20view.jpg?imwidth=4096"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:69
+  [1m[36mColor Create (0.3ms)[0m  [1m[32mINSERT INTO "colors" ("item_id", "color", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["item_id", 10], ["color", "red"], ["created_at", "2019-07-03 09:20:10.424418"], ["updated_at", "2019-07-03 09:20:10.424418"], ["image", ""]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mSize Create (0.6ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 5], ["created_at", "2019-07-03 09:20:10.438294"], ["updated_at", "2019-07-03 09:20:10.438294"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:71
+  [1m[36mSize Create (0.3ms)[0m  [1m[32mINSERT INTO "sizes" ("item_id", "size", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["item_id", 10], ["size", 6], ["created_at", "2019-07-03 09:20:10.442615"], ["updated_at", "2019-07-03 09:20:10.442615"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+Started GET "/items" for ::1 at 2019-07-03 10:20:17 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 90ms (Views: 72.0ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 10:20:35 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-03 10:20:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items" for ::1 at 2019-07-03 10:20:38 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:20:49 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:21:20 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:22:00 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:22:17 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:26:46 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 45ms (Views: 28.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:26:51 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:27:59 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 10:30:57 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-03 10:30:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items" for ::1 at 2019-07-03 10:31:01 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:42:05 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatiron/.rvm/gems/ruby-2.6.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 53ms (Views: 36.5ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:42:08 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items" for ::1 at 2019-07-03 10:42:33 +0100
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:6
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+

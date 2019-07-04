@@ -18,11 +18,24 @@ const TrainerSchema = mongoose.Schema({
       type: String
     }
   ],
+  colors: [
+    {
+      type: String
+    }
+  ],
   sizes: [
     {
       type: Number
     }
-  ]
+  ],
+  comments: [
+    {
+      type: String
+    }
+  ],
+  review: {
+    type: Number
+  }
 });
 
 module.exports = mongoose.model('trainer', TrainerSchema);

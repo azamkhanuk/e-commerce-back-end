@@ -36,7 +36,10 @@ router.post('/', (req, res, next) => {
     cost: req.body.cost,
     gender: req.body.gender,
     images: req.body.images,
-    sizes: req.body
+    colors: req.body.colors,
+    sizes: req.body.sizes,
+    comments: req.body.comments,
+    review: req.body.review
   });
   trainer
     .save()
