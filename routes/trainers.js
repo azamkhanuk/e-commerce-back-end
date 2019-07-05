@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const { check, validationResult } = require('express-validator/check');
-const auth = require('../middleware/auth');
-
-const User = require('../models/User');
 const Trainer = require('../models/Trainer');
 
 router.get('/', (req, res, next) => {
@@ -58,24 +54,21 @@ router.post('/', (req, res, next) => {
     });
 });
 
-router.get('/:trainerId', (req, res, next) => {
-  const id = req.params.trainerId;
-  Trainer.findById(id)
-    .exec()
-    .then(doc => {
-      console.log('From database', doc);
-      if (doc) {
-        res.status(200).json(doc);
-      } else {
-        res
-          .status(404)
-          .json({ message: 'No valid entry found for provided ID' });
+router.param('trainer', (req, res, next, _id) => {
+  Trainer.findOne({ _id: _id })
+    .populate('trainer')
+    .then(function(trainer) {
+      if (!trainer) {
+        return res.sendStatus(404);
       }
+      req.trainer = trainer;
+      return next();
     })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json({ error: err });
-    });
+    .catch(next);
+});
+
+router.get('/:trainer', function(req, res, next) {
+  return res.json({ trainer: req.trainer });
 });
 
 router.patch('/:trainerId', (req, res, next) => {
