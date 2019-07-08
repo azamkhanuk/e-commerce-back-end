@@ -1,7 +1,19 @@
 const express = require('express');
 const connectDB = require('./config/db');
-
+const cors = require('cors');
 const app = express();
+
+//! Cors
+
+app.use(cors());
+
+app.get('/api', function(req, res, next) {
+  res.json({ msg: 'This is CORS-enabled for all origins!' });
+});
+
+app.listen(80, function() {
+  console.log('CORS-enabled web server listening on port 80');
+});
 
 //! Connect Database
 connectDB();
